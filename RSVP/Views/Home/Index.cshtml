@@ -1,0 +1,41 @@
+﻿@model RSVP.ViewModels.CustomerViewModel
+
+
+@{
+    <form asp-controller="Home" asp-action="UserRegisterData" method="post">
+        <div>
+            <label for="Name" class="firstlabel"><strong>Name</strong></label><br>
+            <div class="d-inline-block">
+                <input type="text" id="fname" asp-for="FirstName"  maxlength="" style="width: 85px" required><br>
+                <label for="fname">First</label>
+            </div>
+            <div class="d-inline-block">
+                <input type="text" id="lname" asp-for="LastName" maxlength=""  style="width: 140px" required><br>
+                <label for="lname">Last</label>
+            </div>
+        </div>
+        <span asp-validation-for="FirstName" class="text-danger"></span><br>
+        <span asp-validation-for="LastName" class="text-danger"></span>
+            <div class="status">
+                <p class="status-p"><strong>Are you able to attend?</strong></p>
+                <input type="radio" id="" name="Status" value="Available" checked asp-for="Status">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="" name="Status" value="NotAvailable" asp-for="Status">
+                <label for="no">No</label><br>
+                <input type="radio" id="" name="Status" value="NotSure" asp-for="Status">
+                <label for="not-sure">Not sure</label>
+            </div>
+        <div class="input-div">
+            <input type="submit" value="Submit">
+            <div id="registration-success">
+                <label class="label-success">@ViewBag.RegistrationMessage</label>
+            </div>
+        </div>
+        
+        
+       
+    </form>
+
+}
+
+

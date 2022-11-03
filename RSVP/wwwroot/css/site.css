@@ -1,0 +1,76 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.firstlabel:after{
+    content: " *";
+    color: red;
+}
+
+.status {
+    background-color: rgb(255, 250, 205);
+    margin-bottom: 10px;
+    padding-bottom: 12px;
+
+}
+
+.status-p:after {
+    content: " *";
+    color: red;
+}
+
+.status-p{
+    margin: 0;
+}
+
+table{
+    table-layout: fixed;
+    width: 750px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+    
+}
+
+p.d-grid{
+    color: red;
+}
+
+table, tr,td,th{
+    border: 1px solid;
+}
+
+
+./*firstname div{
+    margin: 0;
+    padding: 0;
+}
+
+.lastname div {
+    margin: 0;
+    padding: 0;
+    
+}
+div col{
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    margin-right: 0;
+}*/
